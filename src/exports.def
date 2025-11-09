@@ -1,4 +1,4 @@
-LIBRARY llama_cpu
+LIBRARY llama-vulkan
 EXPORTS
     llama_adapter_get_alora_invocation_tokens
     llama_adapter_get_alora_n_invocation_tokens

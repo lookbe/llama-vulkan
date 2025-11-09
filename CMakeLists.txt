@@ -74,6 +74,11 @@ target_link_libraries(llama-vulkan PRIVATE
     $<$<CONFIG:Release>:${GGML_LIBS_RELEASE}>
 )
 
+find_package(Vulkan REQUIRED)
+target_link_libraries(llama-vulkan PRIVATE
+	Vulkan::Vulkan
+)
+
 # ---------------------------------------------------------------------
 # Optional defines for compatibility
 # ---------------------------------------------------------------------
